@@ -1,11 +1,14 @@
 # 🌊 Liquid Glass Bottom Navigation Bar
 
-A beautiful, animated bottom navigation bar with liquid glass morphism effect for Jetpack Compose. Inspired by Flutter's liquid_glass_bottom_bar package with enhanced features and performance optimizations.
-
+[![JitPack](https://jitpack.io/v/kareemessam09/liquid-glass-bottom-nav.svg)](https://jitpack.io/#kareemessam09/liquid-glass-bottom-nav)
 ![Version](https://img.shields.io/badge/version-1.0.0-blue)
 ![Compose](https://img.shields.io/badge/Compose-1.9.4-brightgreen)
 ![Kotlin](https://img.shields.io/badge/Kotlin-2.0.21-purple)
 ![License](https://img.shields.io/badge/license-MIT-green)
+
+A beautiful, animated bottom navigation bar with liquid glass morphism effect for Jetpack Compose. **Now published and ready to use!**
+
+✨ Inspired by Flutter's liquid_glass_bottom_bar • 🚀 Ultra-high performance • 🎨 Fully customizable
 
 ## ✨ Features
 
@@ -66,30 +69,47 @@ dependencies {
 }
 ```
 
-### Step 3: Add Compose Compiler Plugin
+**Note:** This imports only the `liquidglassnav` library module, not the sample app. JitPack automatically detects and publishes just the library.
 
-In your app `build.gradle.kts`:
-
-```kotlin
-plugins {
-    alias(libs.plugins.android.application)
-    alias(libs.plugins.kotlin.android)
-    alias(libs.plugins.kotlin.compose) // Add this
-}
-
-android {
-    buildFeatures {
-        compose = true
-    }
-}
-```
-
-### Step 4: Sync Gradle
+### Step 3: Sync Gradle
 
 Click **"Sync Now"** or run:
 ```bash
 ./gradlew build --refresh-dependencies
 ```
+
+That's it! You're ready to use the library. ✅
+
+## ⚡ Quick Start
+
+Add it to your screen in 3 lines:
+
+```kotlin
+LiquidGlassBottomNavBar(
+    items = listOf(
+        NavItem(Icons.Outlined.Home, Icons.Filled.Home, "Home", "home"),
+        NavItem(Icons.Outlined.Search, Icons.Filled.Search, "Search", "search"),
+        NavItem(Icons.Outlined.Person, Icons.Filled.Person, "Profile", "profile", badge = 5)
+    ),
+    selectedIndex = selectedIndex,
+    onItemSelected = { index -> selectedIndex = index }
+)
+```
+
+See [complete example](#-usage) below for full implementation.
+
+## 📦 What Gets Imported?
+
+When you add this dependency, **only the `liquidglassnav` library module** is imported to your project. The sample app (`app` module) in this repository is just for demonstration and is **not included** in your project.
+
+**Repository structure:**
+```
+liquid-glass-bottom-nav/
+├── app/                    # Sample app (NOT imported)
+└── liquidglassnav/         # Library module (THIS is imported ✅)
+```
+
+JitPack automatically detects and publishes only the library module.
 
 ## 📖 Usage
 
