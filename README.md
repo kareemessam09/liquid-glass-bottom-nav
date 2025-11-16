@@ -285,6 +285,7 @@ LiquidGlassBottomNavBar(
 )
 ```
 
+
 ### With Border
 <img src="withBorder.png" width="400" alt="Navigation bar with border"/>
 
