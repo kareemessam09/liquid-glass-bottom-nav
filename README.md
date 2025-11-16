@@ -25,13 +25,19 @@ A beautiful, animated bottom navigation bar with liquid glass morphism effect fo
 
 ## 📸 Preview
 
-Features include:
-- Outlined → Filled icon transitions
-- Transparent moving indicator
-- Smooth spring animations
-- Glass morphism background
-- Badge notifications
-- Vertical bounce on selection
+<div align="center">
+  <img src="glassy.png" width="280" alt="Glassy Effect"/>
+  <img src="withBorder.png" width="280" alt="With Border"/>
+  <img src="withoutBorder.png" width="280" alt="Without Border"/>
+</div>
+
+### ✨ Features Shown:
+- **Outlined → Filled icon transitions** on selection
+- **Transparent moving indicator** that follows active item
+- **Smooth spring animations** with bounce effect
+- **Glass morphism background** with gradient layers
+- **Badge notifications** (red badge with count)
+- **Customizable border** (with/without options)
 
 ## ⚡ Performance Highlights
 
@@ -264,6 +270,37 @@ LiquidGlassBottomNavBar(
     backgroundColor = Color(0xFF2D2D3D),  // Dark background
     selectedColor = Color(0xFFFFD700),    // Gold selected icons
     borderColor = Color(0xFFFFD700).copy(0.3f)
+)
+```
+
+## 🎨 Style Showcase
+
+### Glassy Transparent Effect
+<img src="glassy.png" width="400" alt="Glassy transparent effect"/>
+
+```kotlin
+LiquidGlassBottomNavBar(
+    backgroundColor = Color(0x40FFFFFF),  // Semi-transparent white
+    activeColor = Color(0xFF34C3FF)
+)
+```
+
+### With Border
+<img src="withBorder.png" width="400" alt="Navigation bar with border"/>
+
+```kotlin
+LiquidGlassBottomNavBar(
+    showBorder = true,
+    borderColor = Color.White.copy(0.2f)
+)
+```
+
+### Without Border  
+<img src="withoutBorder.png" width="400" alt="Navigation bar without border"/>
+
+```kotlin
+LiquidGlassBottomNavBar(
+    showBorder = false
 )
 ```
 
