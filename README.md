@@ -332,49 +332,6 @@ NavItem(
 - Check for conflicting padding/margins
 - Try rebuilding the project
 
-### Performance issues
-
-**Good news:** With the simplified transparent design (no blur), performance issues are extremely rare. The library is highly optimized and runs at 60fps on all devices.
-
-## 🎓 Advanced Usage
-
-### Custom Animation Duration
-
-Edit `LiquidGlassBottomNavBar.kt`:
-```kotlin
-animationSpec = tween(200)  // Change from 250ms to 200ms
-```
-
-### Custom Indicator Size
-
-Edit `LiquidGlassBottomNavBar.kt`:
-```kotlin
-.size(64.dp * blobScale)  // Change from 56.dp to 64.dp
-```
-
-### Different Badge Style
-
-Fork the library and customize the badge Box in `NavBarItem` composable.
-
-### Integration with Material3 Scaffold
-
-```kotlin
-Scaffold(
-    bottomBar = {
-        Box(
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(24.dp)
-        ) {
-            LiquidGlassBottomNavBar(
-                // ...
-            )
-        }
-    }
-) { padding ->
-    // Content
-}
-```
 
 ## 📝 Requirements
 
@@ -404,11 +361,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - Built with Jetpack Compose
 - Simplified transparent design for maximum performance
 - Glass morphism design principles
-
-## 📞 Contact
-
-- GitHub: [@kareemessam09](https://github.com/kareemessam09)
-- Issues: [Report a bug](https://github.com/kareemessam09/liquid-glass-bottom-nav/issues)
 
 ## ⭐ Show Your Support
 
