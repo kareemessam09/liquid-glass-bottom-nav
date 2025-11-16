@@ -26,8 +26,6 @@ A beautiful, animated bottom navigation bar with liquid glass morphism effect fo
 ## 📸 Preview
 
 <div align="center">
-  <img src="withBorder.png" width="280" alt="With Border"/>
-  <img src="withoutBorder.png" width="280" alt="Without Border"/>
   <img src="glassy.png" width="280" alt="Glassy Effect"/>
 </div>
 
